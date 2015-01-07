@@ -5,33 +5,38 @@
 @media screen and (max-width:800px){
 	.mainFooter{
 		.textContainer{
-			-webkit-flex-flow: wrap;
-			flex-flow: wrap;
+			-webkit-flex-flow: wrap; flex-flow: wrap;
 			}
 		.copyright, .footerNav{
-			-webkit-flex: 1 100%;
-			flex: 1 100%;
+			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
 			}
 		.copyright{text-align: right;}
 		.footerNav{padding-top: 10px;}
 		}
 }
 
+
 @media screen and (max-width:686px){
-	.backNow{
-		aside, .mainImage{
-			-webkit-flex:1;
-			flex:1;
+	.getUpdates{
+		.mainText, .characterImage{
+			-webkit-box-flex: 1; -webkit-flex:1; flex:1;
 			}
 		.colorWrap{
 			height: 80%;
-			top:10%;
+			top: 10%;
+			}
+		}	
+	.backNow{
+		aside, .mainImage, .colorWrap{
+			-webkit-box-flex: 1; -webkit-flex:1; flex:1;
 			}
 		}
 	.theCrew{
 		-webkit-flex-flow: wrap;
 		flex-flow: wrap;
-		aside, .mainText{flex: 1 100%;}
+		aside, .mainText{
+			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			}
 		aside{
 			text-align: center;
 			padding-right: 0;
@@ -41,6 +46,31 @@
 }//end 686px
 
 @media screen and (max-width:580px){
+	.getUpdates{
+		-webkit-flex-flow: wrap; flex-flow:wrap;
+		h1, h3{text-align: center;}
+		form{margin-bottom: 10px;}
+		.mc-field-group{
+			display: block;
+			padding-bottom: 10px;
+			input{width: 100%;}
+			input + label + input{
+				margin-left: 0; 
+				margin-top: 10px;
+				}
+			}
+		.mainText{padding-right: 0}
+		.mainText, .characterImage{
+			-webkit-box-flex: 1 100%; -webkit-flex:1 100%; flex:1 100%;
+			}
+		.colorWrap{
+			height: auto;
+			top: 0;
+			bottom: 0;
+			margin: 100px 0 0;
+			}
+		}
+		
 	.mainFooter{
 		.copyright, .footerNav{padding-top: 0;}
 		.footerNav a{
@@ -53,10 +83,9 @@
 
 @media screen and (max-width:565px){
 	.introText{
-		-webkit-flex-flow: wrap;
-		flex-flow: wrap;
+		-webkit-flex-flow: wrap; flex-flow: wrap;
 		aside, .mainText{
-			flex: 1 100%;
+			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
 			}
 		aside{
 			text-align: center;
@@ -64,13 +93,12 @@
 			padding-bottom: 30px;
 			}
 		}
+			
 	.backNow{
-		-webkit-flex-flow: wrap;
-		flex-flow:wrap;
+		-webkit-flex-flow: wrap; flex-flow:wrap;
 		margin-bottom: 30px;
 		aside, .mainImage{
-			-webkit-flex:1 100%;
-			flex:1 100%;
+			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
 			}
 		aside{
 			text-align: center;
@@ -84,6 +112,7 @@
 			margin: 30px 0 0;
 			}
 		}
+		
 	.theCrew .mainText{
 		text-align: center;
 		.crewProfileText{padding-left: 0;}
