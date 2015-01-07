@@ -164,7 +164,7 @@ section.videoPlayer{
 .mc-field-group{
 	display: -webkit-flex;
 	display: flex;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	label{
 		position: absolute;
 		width: 1px;
@@ -183,7 +183,7 @@ section.videoPlayer{
 		&[placeholder]{font: italic 400 1.2em/1 "Libre Baskerville"}
 		}
 	input + label + input{
-		margin-left: 5px;
+		margin-left: 10px;
 		}
 	}
 input.button{
