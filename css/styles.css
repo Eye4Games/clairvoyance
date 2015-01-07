@@ -186,7 +186,7 @@ section.videoPlayer {
 .mc-field-group {
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 5px; }
+  padding-bottom: 10px; }
   .mc-field-group label {
     position: absolute;
     width: 1px;
@@ -206,7 +206,7 @@ section.videoPlayer {
     .mc-field-group input[placeholder] {
       font: italic 400 1.2em/1 "Libre Baskerville"; }
   .mc-field-group input + label + input {
-    margin-left: 5px; }
+    margin-left: 10px; }
 
 input.button {
   -webkit-appearance: none;
@@ -390,8 +390,7 @@ input.button {
     .getUpdates form {
       margin-bottom: 10px; }
     .getUpdates .mc-field-group {
-      display: block;
-      padding-bottom: 10px; }
+      display: block; }
       .getUpdates .mc-field-group input {
         width: 100%; }
       .getUpdates .mc-field-group input + label + input {
