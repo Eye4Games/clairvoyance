@@ -22,6 +22,9 @@
 		aside, .mainImage{
 			-webkit-flex:1;
 			flex:1;
+	.getUpdates{
+		.mainText, .characterImage{
+			-webkit-box-flex: 1; -webkit-flex:1; flex:1;
 			}
 		.colorWrap{
 			height: 80%;
