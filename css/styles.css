@@ -39,7 +39,7 @@ img, svg {
   height: auto; }
 
 body {
-  background: rgba(56, 82, 56, 0.2);
+  background: rgba(69, 69, 69, 0.2);
   color: #682267;
   font-family: "Libre Baskerville";
   font-size: 62.5%; }
@@ -62,7 +62,7 @@ h3 {
 
 h2 {
   font: 400 normal 2.4em/1 "Corben";
-  margin-bottom: 0.75em;
+  margin-bottom: .75em;
   text-transform: uppercase; }
 
 input.button, .backNow .backitButton {
@@ -248,10 +248,10 @@ input.button {
     margin: 0 auto 30px;
     text-align: center;
     /*
-		padding: 0 15px;
-		&:first-child{padding-left: 0;}
-		&:last-child{padding-right: 0;}
-		*/ }
+    padding: 0 15px;
+    &:first-child{padding-left: 0;}
+    &:last-child{padding-right: 0;}
+    */ }
     .someQuotes blockquote p {
       font-style: italic;
       background: rgba(201, 90, 199, 0.2);
@@ -322,7 +322,7 @@ input.button {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
-    font: 200 normal 2em/1 "Oswald", Helvetica, Arial, sans-serif;
+    font: 200 normal 2em/1 "Oswald",Helvetica, Arial, sans-serif;
     padding: 30px 0 0 20px;
     text-align: left;
     text-transform: uppercase; }
@@ -343,9 +343,7 @@ input.button {
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-size: 6vw; }
- }
-
+    font-size: 6vw; } }
 @media screen and (max-width: 800px) {
   .mainFooter .textContainer {
     -webkit-flex-flow: wrap;
@@ -357,9 +355,7 @@ input.button {
   .mainFooter .copyright {
     text-align: right; }
   .mainFooter .footerNav {
-    padding-top: 10px; }
- }
-
+    padding-top: 10px; } }
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-box-flex: 1;
@@ -384,9 +380,7 @@ input.button {
     .theCrew aside {
       text-align: center;
       padding-right: 0;
-      padding-bottom: 30px; }
- }
-
+      padding-bottom: 30px; } }
 @media screen and (max-width: 580px) {
   .getUpdates {
     -webkit-flex-flow: wrap;
@@ -420,9 +414,7 @@ input.button {
   .mainFooter .footerNav a {
     display: block;
     margin: 0;
-    padding: 10px 0 0; }
- }
-
+    padding: 10px 0 0; } }
 @media screen and (max-width: 565px) {
   .introText {
     -webkit-flex-flow: wrap;
@@ -462,10 +454,7 @@ input.button {
     .theCrew .mainText img {
       float: none;
       margin-right: 0;
-      max-width: 200px; }
- }
-
+      max-width: 200px; } }
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 4em; }
- }
+    font-size: 4em; } }
