@@ -292,14 +292,18 @@ input.button {
   -webkit-flex: 3 72.5%;
   flex: 3 72.5%; }
   .theCrew .mainText .crewProfile {
-    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     margin-bottom: 15px; }
   .theCrew .mainText img {
-    float: left;
-    margin-right: -152px;
-    max-width: 142px; }
+    width: 142px; }
   .theCrew .mainText .crewProfileText {
-    padding-left: 152px; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding-left: 10px; }
 
 .mainFooter {
   background: url("../images/top-eyes.png") center bottom repeat-x, url("../images/purple-bg.jpg");
@@ -448,12 +452,17 @@ input.button {
 
   .theCrew .mainText {
     text-align: center; }
+    .theCrew .mainText .crewProfile {
+      -webkit-flex-flow: wrap;
+      flex-flow: wrap; }
     .theCrew .mainText .crewProfileText {
-      padding-left: 0; }
+      padding-left: 0;
+      -webkit-box-flex: 1 100%;
+      -webkit-flex: 1 100%;
+      flex: 1 100%; }
     .theCrew .mainText img {
-      float: none;
-      margin-right: 0;
-      max-width: 200px; } }
+      margin: 0 auto;
+      width: 200px; } }
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 4em; } }

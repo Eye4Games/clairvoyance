@@ -114,11 +114,16 @@
 		
 	.theCrew .mainText{
 		text-align: center;
-		.crewProfileText{padding-left: 0;}
+		.crewProfile{
+			-webkit-flex-flow: wrap; flex-flow:wrap;
+			}
+		.crewProfileText{
+			padding-left: 0;
+			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			}
 		img{
-			float: none;
-			margin-right: 0;
-			max-width: 200px;
+			margin: 0 auto;
+			width: 200px;
 			}
 		}
 }//end 565px

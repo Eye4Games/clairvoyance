@@ -162,8 +162,7 @@ section.videoPlayer{
 	padding-right: 10px;
 	}
 .mc-field-group{
-	display: -webkit-flex;
-	display: flex;
+	display: -webkit-flex; display: flex;
 	padding-bottom: 10px;
 	label{
 		position: absolute;
@@ -285,18 +284,15 @@ input.button{
 	.mainText{
 		// width: 72.5%;
 		-webkit-box-flex: 3 72.5%; -webkit-flex: 3 72.5%; flex: 3 72.5%;
-		//margin-top: -10px;
 		.crewProfile{
-			overflow: hidden;
+			display: -webkit-flex; display: flex;
+			-webkit-align-items: flex-start; align-items: flex-start;
 			margin-bottom: 15px;
 			}
-		img{
-			float: left;
-			margin-right: -152px;
-			max-width: 142px;
-			}
+		img{width: 142px;}
 		.crewProfileText{
-			padding-left: 152px;
+			-webkit-box-flex: 1; -webkit-flex: 1; flex: 1;
+			padding-left: 10px;
 			}
 		}
 	}
