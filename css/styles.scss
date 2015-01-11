@@ -285,6 +285,7 @@ input.button{
 	padding: 30px 0 50px;
 	}		
 .theCrew{
+	p{font-size: 1.55em;}
 	aside{
 		// width:27.5%;
 		@include flex(1 27.5%);
@@ -306,6 +307,13 @@ input.button{
 			@include flex(1);
 			padding-left: 10px;
 			}
+		}
+	}
+.additionalSupport{
+	aside h2{
+		color: gray;
+		text-shadow: -1px 2px 1px rgba(black,.2);
+		text-transform: none;
 		}
 	}
 	
