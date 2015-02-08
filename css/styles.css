@@ -32,6 +32,8 @@ table {
   border-spacing: 0; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 img, svg {
@@ -69,6 +71,7 @@ input.button, .backNow .backitButton {
   background: #c95ac7;
   border: none;
   border-radius: 5px;
+  -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   color: white;
   display: block;
@@ -105,6 +108,8 @@ header {
     margin: 20px auto 0;
     overflow: hidden; }
   header nav.mainNav {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     border-bottom: 3px solid rgba(201, 90, 199, 0.2);
     font-size: 1.8em;
@@ -118,6 +123,8 @@ header {
         color: #e3ba5b; }
 
 section.videoPlayer {
+  background: url("../images/video-eyes.png") center center fixed, -webkit-gradient(linear, left top, left bottom, from(#1b091b), to(rgba(27, 9, 27, 0.75))), url("../images/purple-bg.jpg");
+  background: url("../images/video-eyes.png") center center fixed, -webkit-linear-gradient(top, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   background: url("../images/video-eyes.png") center center fixed, linear-gradient(to bottom, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   padding: 20px;
   text-align: center; }
@@ -125,12 +132,13 @@ section.videoPlayer {
     max-width: 800px;
     margin: 0 auto; }
   section.videoPlayer .videoWrapper {
+    -webkit-box-shadow: 0px 3px 5px black;
     box-shadow: 0px 3px 5px black;
-    padding-bottom: 75%;
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     position: relative; }
-    section.videoPlayer .videoWrapper iframe {
+    section.videoPlayer .videoWrapper iframe, section.videoPlayer .videoWrapper video {
       position: absolute;
       top: 0;
       left: 0;
@@ -183,6 +191,7 @@ section.videoPlayer {
   -webkit-flex: 4 56.5%;
   -ms-flex: 4 56.5%;
   flex: 4 56.5%;
+  -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
   padding-right: 10px; }
@@ -220,6 +229,7 @@ input.button {
 .colorWrap {
   background: rgba(27, 9, 27, 0.05);
   border-radius: 6px;
+  -webkit-box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   position: absolute;
   left: 20px;
@@ -232,6 +242,7 @@ input.button {
   height: 50%;
   top: 25%; }
 .backNow aside {
+  -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
@@ -282,6 +293,8 @@ input.button {
       margin-top: 0; }
 
 .darkenWrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0)));
+  background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   padding: 30px 0 50px; }
 
@@ -303,6 +316,7 @@ input.button {
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 15px; }
   .theCrew .mainText img {
@@ -487,3 +501,5 @@ input.button {
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 4em; } }
+
+
