@@ -15,6 +15,9 @@
 		}
 }
 
+@media screen and (max-width:765px){
+	.pnpExample{display: none;}
+}
 
 @media screen and (max-width:686px){
 	.getUpdates{
@@ -91,6 +94,8 @@
 			padding-bottom: 30px;
 			}
 		}
+		
+	.printPlay .mainText{@include flex(1 100%);}
 			
 	.backNow{
 		@include flexWrap(wrap);

@@ -49,6 +49,10 @@ body {
 p {
   font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
   padding-bottom: 30px; }
+  p a {
+    color: #c95ac7; }
+    p a:hover {
+      color: #8e2f8d; }
 
 h1 {
   font: 400 normal 6em/.8em "Corben";
@@ -191,8 +195,8 @@ section.videoPlayer {
   -webkit-flex: 4 56.5%;
   -ms-flex: 4 56.5%;
   flex: 4 56.5%;
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -242,8 +246,8 @@ input.button {
   height: 50%;
   top: 25%; }
 .backNow aside {
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
@@ -256,6 +260,32 @@ input.button {
   flex: 3 72.5%;
   overflow: hidden;
   padding-right: 20px; }
+
+.printPlay {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 30px; }
+  .printPlay .mainText {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 58%;
+    -ms-flex: 0 58%;
+    flex: 0 58%;
+    max-width: 546px; }
+    .printPlay .mainText p, .printPlay .mainText .pnpExample {
+      -webkit-flex: 1 50%;
+      -ms-flex: 1 50%;
+      flex: 1 50%; }
+    .printPlay .mainText p {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      color: gray;
+      font: normal 1.8em/1.7 "Corben";
+      border-top: 2px groove white;
+      padding: 10px 10px 0 0; }
 
 .someQuotes {
   margin-bottom: 50px; }
@@ -390,6 +420,9 @@ input.button {
     text-align: right; }
   .mainFooter .footerNav {
     padding-top: 10px; } }
+@media screen and (max-width: 765px) {
+  .pnpExample {
+    display: none; } }
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-flex: 1;
@@ -464,6 +497,11 @@ input.button {
       padding-right: 0;
       padding-bottom: 30px; }
 
+  .printPlay .mainText {
+    -webkit-flex: 1 100%;
+    -ms-flex: 1 100%;
+    flex: 1 100%; }
+
   .backNow {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -501,5 +539,4 @@ input.button {
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 4em; } }
-
 

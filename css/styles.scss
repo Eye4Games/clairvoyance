@@ -34,6 +34,10 @@ body{
 p{
 	font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
 	padding-bottom: 30px;
+	a{
+		color: $lightPurple;
+		&:hover{color: darken($lightPurple, 20%);}
+		}
 	}
 h1{
 	font: 400 normal 6em/.8em "Corben";
@@ -235,6 +239,26 @@ input.button{
 		}
 	.backitButton{
 		@extend %button;
+		}
+	}	
+
+//
+//*************************PRINT AND PLAY SECTION
+.printPlay{
+	justify-content: flex-end;
+	margin-bottom: 30px;
+	.mainText{
+		@include flexbox();
+		@include flex(0 58%);
+		max-width: 546px;
+		p, .pnpExample{@include flex(1 50%);}
+		p{
+			align-self: center;
+			color: gray;
+			font: normal 1.8em/1.7 "Corben";
+			border-top: 2px groove white;
+			padding: 10px 10px 0 0;
+			}
 		}
 	}	
 
