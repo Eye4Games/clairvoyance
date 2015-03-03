@@ -1,0 +1,79 @@
+#rules {
+	aside{
+		h2{text-transform: none;}
+		h2{color: gray;}
+	}
+	ol ul{margin-left: 20px;}
+	
+	.mainText{
+		li{
+			font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			margin-left: 20px;
+			}
+		ul{list-style-type: disc;}
+		ol{list-style-type: decimal;}
+		}
+	.mainText, aside{
+		img{
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			}
+		}
+}
+
+ul p{padding-bottom: 15px;}
+
+.rulesIndex{
+	border-top: 2px groove white;
+	padding-top: 10px;
+	a{
+		font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
+		color: $lightPurple;
+		}
+	}
+.videoPlayer .introText{
+	color: $lightPurple;
+	text-align: left;
+	max-width: 800px;
+	}
+	
+.example{
+	background: linear-gradient(to bottom, rgba($lightPurple,.4), rgba($lightPurple,.2));
+	border: 4px outset rgba($lightPurple,.2);
+	box-shadow: 0 2px 3px rgba(0,0,0,.5);
+	margin-bottom: 30px;
+	padding: 10px 20px 0;
+	font-size: .8em;
+	&Gray{
+		background: linear-gradient(to bottom, rgba(gray,.7), rgba(gray,.5));
+		border-color: rgba(silver,.2);
+		color: white;
+		}
+	h3{
+		color: white;
+		font: 400 2.5em/1 "Corben";
+		padding-bottom: 20px;
+		text-align: center;
+		}
+	p{
+		padding-bottom: 15px;
+		text-align: left;
+		}
+	}
+	
+.characterStuff{
+	h3{
+		font: 400 normal 2em/1.2em "Corben";
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		}
+	h4{
+		color: $lightPurple;
+		font-style: italic;
+		font-size: 1.6em;
+		margin-bottom: 15px;
+		}
+	}
