@@ -34,6 +34,8 @@ body{
 p{
 	font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
 	padding-bottom: 30px;
+	i{font-style: italic;}
+	b{font-weight: 600}
 	a{
 		color: $lightPurple;
 		&:hover{color: darken($lightPurple, 20%);}
@@ -48,7 +50,7 @@ h3{
 	color: $lightPurple;
 	font-style: italic;
 	font-size: 1.6em;
-	line-height: 1em;
+	line-height: 1.1em;
 	margin-top: 15px;
 	}
 h2{
@@ -127,10 +129,12 @@ section.videoPlayer{
 		}
 	.videoWrapper{
 		box-shadow: 0px 3px 5px black;
-		padding-bottom: 56.25%; //16x9 ratio //75% 4x3 ratio
+		
 		height: 0;
 		overflow: hidden;
 		position: relative;
+		&.sixteenByNine{padding-bottom: 56.25%;} //16x9 ratio
+		&.fourByThree{padding-bottom: 75%;} //4x3 ratio
 		iframe, video{
 			position: absolute;
             top: 0;
@@ -149,12 +153,12 @@ section.videoPlayer{
 	padding: 60px 0 0;
 	aside{
 		// width:42%;
-		@include flex(2 42%);
+		@include flex(0 0 42%);
 		padding-right: 30px;
 		text-align: right;
 		h1 span{display: inline-block;}
 		ul.infoText{
-			border-top: 2px solid rgba(black,.2);
+			border-top: 2px groove white;
 			color: $lightPurple;
 			font: 400 normal 2em/.75em "Corben";
 			padding-top: 15px;
@@ -163,16 +167,15 @@ section.videoPlayer{
 		}
 	.mainText{
 		// width: 58%;
-		@include flex(3 58%);
+		@include flex(0 0 58%);
 		}
 	}
-.introText h1{border-bottom: 1px solid rgba(white,.5);}
 
 
 //
 //*******************************UPDATES FORM
 .characterImage{
-	@include flex(3 42%);
+	@include flex(0 0 42%);
 	overflow: hidden;
 	}
 .getUpdates{
@@ -182,7 +185,7 @@ section.videoPlayer{
 	h3{margin-bottom: 20px;}
 	}
 .getUpdates .mainText{
-	@include flex(4 56.5%);
+	@include flex(0 0 56.5%);
 	-webkit-align-self: center; align-self: center;
 	padding-right: 10px;
 	}
@@ -279,11 +282,9 @@ input.button{
 		max-width: 700px;
 		margin: 0 auto 30px;
 		text-align: center;
-		/*
 		padding: 0 15px;
 		&:first-child{padding-left: 0;}
 		&:last-child{padding-right: 0;}
-		*/
 		p{
 			font-style: italic;
 			background: rgba($lightPurple,.2);
@@ -321,7 +322,7 @@ input.button{
 	p{font-size: 1.55em;}
 	aside{
 		// width:27.5%;
-		@include flex(1 27.5%);
+		@include flex(0 0 27.5%);
 		h1{
 			border-bottom: none;
 			color: gray;
@@ -329,7 +330,7 @@ input.button{
 		}
 	.mainText{
 		// width: 72.5%;
-		@include flex(3 72.5%);
+		@include flex(0 0 72.5%);
 		.crewProfile{
 			@include flexbox();
 			-webkit-align-items: flex-start; align-items: flex-start;

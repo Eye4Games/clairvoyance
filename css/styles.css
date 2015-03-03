@@ -126,6 +126,13 @@ header {
       header nav.mainNav a.navHere, header nav.mainNav a:hover {
         color: #e3ba5b; }
 
+.kickstarterCorner {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .kickstarterCorner:hover .style5 {
+    fill: white; }
+
 section.videoPlayer {
   background: url("../images/video-eyes.png") center center fixed, -webkit-gradient(linear, left top, left bottom, from(#1b091b), to(rgba(27, 9, 27, 0.75))), url("../images/purple-bg.jpg");
   background: url("../images/video-eyes.png") center center fixed, -webkit-linear-gradient(top, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
@@ -423,6 +430,8 @@ input.button {
 @media screen and (max-width: 765px) {
   .pnpExample {
     display: none; } }
+  .kickstarterCorner {
+    width: 75px; } }
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-flex: 1;
