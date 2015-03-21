@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Libre+Baskerville:400,400i,600/Oswald:200">
 	<link rel='stylesheet' href="//fonts.googleapis.com/css?family=Corben" type="text/css">
 	<link rel="stylesheet" href="../css/styles.css" />
-	<link rel="stylesheet" href="../css/quiz.css" />
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="./quiz.js"></script>
 </head>
@@ -22,7 +21,6 @@
 			<a href="/">home</a> • 
 			<a href="/rules">rules</a> • 
 			<a href="/quiz" class="navHere">quiz</a> <!--• 
-			<a href="#">kickstarter</a> • 
 			<a href="#">videos</a>-->
 		</nav>
 		
@@ -43,143 +41,203 @@
 			</main>
 		</div>
 	</section>
-	<section>
-		<div>
-			<h2 class="question">
-				Which captain do you most identify with?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question1" value="zhengi"/>
-				<label>Arr, Captain Hook!</label>
-				<input type="radio" name="question1" value="appleseed"/>
-				<label>Captain Planet, he’s my hero!</label>
-				<input type="radio" name="question1" value="tut"/>
-				<label>Cap'n Crunch: No explanation needed.</label>
-				<input type="radio" name="question1" value="caesar"/>
-				<label>Captain Ahab: Never surrender, never listen to omens.</label>
-				<input type="radio" name="question1" value="evita"/>
-				<label>Captain America: Patriotism is the greatest power.</label>
-				<input type="radio" name="question1" value="sacagewea"/>
-				<label>Captain Picard: Set phasers to stunning.</label>
+	
+	<section class="mainContent">
+		
+		<div class="container introText">	
+			<aside class="question">
+				<h2 class="question">Which captain do you most identify with?</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question1" value="zhengi"/>
+							Arr, Captain Hook!</label>
+				<label><input type="radio" name="question1" value="appleseed"/>
+							Captain Planet, he’s my hero!</label>
+				<label><input type="radio" name="question1" value="tut"/>
+							Cap'n Crunch: No explanation needed.</label>
+				<label><input type="radio" name="question1" value="caesar"/>
+							Captain Ahab: Never surrender, never listen to omens.</label>
+				<label><input type="radio" name="question1" value="evita"/>
+							Captain America: Patriotism is the greatest power.</label>
+				<label><input type="radio" name="question1" value="sacagewea"/>
+							Captain Picard: Set phasers to stunning.</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">What do you do after a breakup?</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question2" value="caesar">
+							Ice cream. All the ice cream.</label>
+				<label><input type="radio" name="question2" value="zhengi">
+							No one would break up with me. Ever.</label>
+				<label><input type="radio" name="question2" value="appleseed">
+							Good thing I got that cute barista’s number…</label>
+				<label><input type="radio" name="question2" value="sacagewea">
+							Venture into the wilderness on a year-long journey to find myself (and find a pet bear cub while I’m at it). </label>
+				<label><input type="radio" name="question2" value="evita">
+							Go shopping! I want to look my best for when they come crawling back…</label>
+				<label><input type="radio" name="question2" value="tut">
+							Consign myself to a life alone.</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">If you could have a superpower, what would it be?</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question3" value="caesar">
+							Laser eyebeams. Imagine: I could just come and see a city to conquer it!</label>
+				<label><input type="radio" name="question3" value="sacagewea">
+							Super speed  -- I’ve got places to be!</label>
+				<label><input type="radio" name="question3" value="appleseed">
+							Storm-summoning: farming just got ten times easier!</label>
+				<label><input type="radio" name="question3" value="tut">
+							Rapid healing: Better safe than sorry.</label>
+				<label><input type="radio" name="question3" value="evita">
+							Dream-walking.</label>
+				<label><input type="radio" name="question3" value="zhengi">
+							I’m powerful enough already. A Wii U would be nice, though…</label>
 			</div>
-
-			<h2 class="question">
-				What do you do after a breakup?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question2" value="caesar">
-				<label>Ice cream. All the ice cream.</label>
-				<input type="radio" name="question2" value="zhengi">
-				<label>No one would break up with me. Ever.</label>
-				<input type="radio" name="question2" value="appleseed">
-				<label>Good thing I got that cute barista’s number…</label>
-				<input type="radio" name="question2" value="sacagewea">
-				<label>Venture into the wilderness on a year-long journey to find myself (and find a pet bear cub while I’m at it). </label>
-				<input type="radio" name="question2" value="evita">
-				<label>Go shopping! I want to look my best for when they come crawling back…</label>
-				<input type="radio" name="question2" value="tut">
-				<label>Consign myself to a life alone.</label>
-			</div>
-
-			<h2 class="question">
-				If you could have a superpower, what would it be?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question3" value="caesar">
-				<label>Laser eyebeams. Imagine: I could just come and see a city to conquer it!</label>
-				<input type="radio" name="question3" value="sacagewea">
-				<label>Super speed  -- I’ve got places to be!</label>
-				<input type="radio" name="question3" value="appleseed">
-				<label>Storm-summoning: farming just got ten times easier!</label>
-				<input type="radio" name="question3" value="tut">
-				<label>Rapid healing: Better safe than sorry.</label>
-				<input type="radio" name="question3" value="evita">
-				<label>Dream-walking.</label>
-				<input type="radio" name="question3" value="zhengi">
-				<label>I’m powerful enough already. A Wii U would be nice, though…</label>
-			</div>
-
-			<h2 class="question">
-				How do you take your bread?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question4" value="caesar">
-				<label>In tiny pieces. Each slice should be stabbed 23 times.</label>
-				<input type="radio" name="question4" value="appleseed">
-				<label>Slathered in apple butter.</label>
-				<input type="radio" name="question4" value="evita">
-				<label>Dulce de leche or bust!</label>
-				<input type="radio" name="question4" value="tut">
-				<label>Cut into T-Rex shapes or it’s just not worth it.</label>
-				<input type="radio" name="question4" value="zhengi">
-				<label>Toasted to a crisp!</label>
-				<input type="radio" name="question4" value="sacagewea">
-				<label>Corn bread, please.</label>
-			</div>
-
-			<h2 class="question">
-				Best kind of pie?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question5" value="sacagewea">
-				<label>Pecan, hands down.</label>
-				<input type="radio" name="question5" value="caesar">
-				<label>Cherry! I like it when my food bleeds.</label>
-				<input type="radio" name="question5" value="appleseed">
-				<label>Chicken pot pie: Nice n’ hearty.</label>
-				<input type="radio" name="question5" value="zhengi">
-				<label>3.14…</label>
-				<input type="radio" name="question5" value="tut">
-				<label>Boston Cream Pie or anything that comes with frosting.</label>
-				<input type="radio" name="question5" value="evita">
-				<label>Pizza, because there’s already a slice for everyone.</label>
-			</div>
-
-			<h2 class="question">
-				What’s your weapon of choice?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question6" value="sacagewea">
-				<label>Sword: it’s a classic for a reason.</label>
-				<input type="radio" name="question6" value="appleseed">
-				<label>Dynamite.</label>
-				<input type="radio" name="question6" value="evita">
-				<label>Microsoft Word: if the pen’s mightier than the sword, surely the word processor is mightier than the gun.</label>
-				<input type="radio" name="question6" value="tut">
-				<label>Candlestick.</label>
-				<input type="radio" name="question6" value="zhengi">
-				<label>I let my minions handle the fighting.</label>
-				<input type="radio" name="question6" value="caesar">
-				<label>Is seriously no one else going to choose gun?</label>
-			</div>
-
-			<h2 class="question">
-				What’s your ideal pet?
-			</h2>
-			<span class="errorMessage">Missing this answer.</span>
-			<div class="answers">
-				<input type="radio" name="question7" value="caesar">
-				<label>Only the most loyal of hounds! I’ve always wanted a “Beware of Dog” sign.</label>
-				<input type="radio" name="question7" value="tut">
-				<label>An ant farm, and sea monkeys, and a pet rock, and…</label>
-				<input type="radio" name="question7" value="appleseed">
-				<label>Crazy cat lady? Sign me up!</label>
-				<input type="radio" name="question7" value="zhengi">
-				<label>Animals are a lower life form and a drain upon our resources.</label>
-				<input type="radio" name="question7" value="evita">
-				<label>Unicorn, please!</label>
-				<input type="radio" name="question7" value="sacagewea">
-				<label>Parrot.</label>
-			</div>
-
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">How do you take your bread?</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question4" value="caesar">
+							In tiny pieces. Each slice should be stabbed 23 times.</label>
+				<label><input type="radio" name="question4" value="appleseed">
+							Slathered in apple butter.</label>
+				<label><input type="radio" name="question4" value="evita">
+							Dulce de leche or bust!</label>
+				<label><input type="radio" name="question4" value="tut">
+							Cut into T-Rex shapes or it’s just not worth it.</label>
+				<label><input type="radio" name="question4" value="zhengi">
+							Toasted to a crisp!</label>
+				<label><input type="radio" name="question4" value="sacagewea">
+							Corn bread, please.</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">Best kind of pie?</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question5" value="sacagewea">
+							Pecan, hands down.</label>
+				<label><input type="radio" name="question5" value="caesar">
+							Cherry! I like it when my food bleeds.</label>
+				<label><input type="radio" name="question5" value="appleseed">
+							Chicken pot pie: Nice n’ hearty.</label>
+				<label><input type="radio" name="question5" value="zhengi">
+							3.14…</label>
+				<label><input type="radio" name="question5" value="tut">
+							Boston Cream Pie or anything that comes with frosting.</label>
+				<label><input type="radio" name="question5" value="evita">
+							Pizza, because there’s already a slice for everyone.</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">
+					What’s your weapon of choice?
+				</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question6" value="sacagewea">
+							Sword: it’s a classic for a reason.</label>
+				<label><input type="radio" name="question6" value="appleseed">
+							Dynamite.</label>
+				<label><input type="radio" name="question6" value="evita">
+							Microsoft Word: if the pen’s mightier than the sword, surely the word processor is mightier than the gun.</label>
+				<label><input type="radio" name="question6" value="tut">
+							Candlestick.</label>
+				<label><input type="radio" name="question6" value="zhengi">
+							I let my minions handle the fighting.</label>
+				<label><input type="radio" name="question6" value="caesar">
+							Is seriously no one else going to choose gun?</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
+			<aside class="question">
+				<h2 class="question">
+					What’s your ideal pet?
+				</h2>
+				<span class="errorMessage">Missing this answer.</span>
+			</aside>
+			<div class="answers mainText">
+				<label><input type="radio" name="question7" value="caesar">
+							Only the most loyal of hounds! I’ve always wanted a “Beware of Dog” sign.</label>
+				<label><input type="radio" name="question7" value="tut">
+							An ant farm, and sea monkeys, and a pet rock, and…</label>
+				<label><input type="radio" name="question7" value="appleseed">
+							Crazy cat lady? Sign me up!</label>
+				<label><input type="radio" name="question7" value="zhengi">
+							Animals are a lower life form and a drain upon our resources.</label>
+				<label><input type="radio" name="question7" value="evita">
+							Unicorn, please!</label>
+				<label><input type="radio" name="question7" value="sacagewea">
+							Parrot.</label>
+			</div><!-- mainText -->
+		</div><!-- container -->
+		
+		<div class="container introText">
 			<button onclick="validate()">Submit</button>
-		</div>
+		</div><!-- container introText -->
 	</section>
+	
+	<footer class="mainFooter">
+		<div class="container">
+			<a href="http://eye4games.com" class="Eye4Logo">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="100px" height="144px" viewBox="0 0 100 144" enable-background="new 0 0 100 144" xml:space="preserve">
+					<path fill="#fff" d="M49.998,58.408c-9.758,0-17.668,7.911-17.668,17.667c0,9.758,7.91,17.672,17.668,17.672
+						c9.76,0,17.673-7.914,17.673-17.672C67.671,66.319,59.758,58.408,49.998,58.408z M57,84h-2v4h-4v-3.786l-10-0.002v-3.545L49.224,62
+						h4.074l-8.635,19H51v-8h4v8h2V84z"/>
+					<polygon fill="#fff" points="32.78,118 30.957,127 34.657,127 32.851,118 	"/>
+					<path fill="#fff" d="M0,0v137.314C0,141.006,2.985,144,6.667,144h86.666c3.682,0,6.667-2.994,6.667-6.686V0H0z M23,118h-4
+						v-1.893c0-0.929,0.148-1.621-0.303-2.074c-0.488-0.416-0.844-0.623-1.557-0.623c-0.678,0-1.108,0.207-1.595,0.621
+						c-0.511,0.452-0.546,1.142-0.546,2.069v14.09c0,0.902,0.107,1.579,0.619,2.03c0.486,0.439,0.921,0.659,1.598,0.659
+						c0.714,0,0.959-0.22,1.446-0.66c0.451-0.45,0.337-1.129,0.337-2.032V125h-2v-3h6v8.184c0,2.163-0.482,3.781-1.734,4.852
+						c-1.24,1.094-2.61,1.641-4.203,1.641c-1.57,0-2.896-0.546-4.125-1.641c-1.31-1.069-1.938-2.684-1.938-4.848v-14.08
+						c0-2.166,0.74-3.795,2.051-4.89c1.229-1.069,2.675-1.604,4.245-1.604c1.593,0,2.734,0.535,3.975,1.605
+						c1.252,1.096,1.729,2.727,1.729,4.894V118z M36.428,136l-1.079-5h-5.047l-1.079,5h-3.7l5.771-26h3.081l5.754,26H36.428z M59,136h-4
+						v-14.995L51.636,132h-1.847L46,120.899V136h-4v-26h3.956l4.747,14h0.071l4.729-14H59V136z M74,114h-7v7h6v4h-6v7h7v4H63v-26h11V114
+						z M89,118h-4v-1.37c0-0.927-0.039-1.701-0.428-2.323c-0.398-0.573-0.914-0.872-1.854-0.896c-0.987,0.024-1.65,0.372-1.992,1.042
+						c-0.341,0.67-0.512,1.467-0.512,2.393c-0.024,0.977,0.1,1.713,0.371,2.213c0.259,0.524,0.833,0.969,1.728,1.334l2.821,1.17
+						c1.587,0.598,2.644,1.469,3.174,2.613c0.481,1.182,0.712,2.742,0.688,4.68c0,2.302-0.461,4.16-1.379,5.574
+						c-0.966,1.475-2.627,2.223-4.982,2.247c-1.813-0.024-3.464-0.631-4.617-1.822C76.804,133.687,76,132.19,76,130.367V129h4v1.153
+						c0,0.695,0.212,1.316,0.625,1.866c0.391,0.573,0.98,0.86,1.925,0.86c1.229,0,2.045-0.372,2.363-1.115
+						c0.189-0.352,0.315-0.768,0.339-1.243c0.024-0.475,0.048-1.011,0.048-1.608c0-1.363-0.115-2.297-0.35-2.796
+						c-0.295-0.499-0.888-0.913-1.782-1.242l-2.631-1.115c-1.545-0.683-2.604-1.584-3.182-2.705c-0.579-1.121-0.854-2.504-0.831-4.149
+						c0-2.071,0.531-3.807,1.59-5.208c1.061-1.365,2.639-2.06,4.734-2.083c1.883,0.023,3.38,0.643,4.489,1.855
+						c1.082,1.217,1.662,2.596,1.662,4.136V118z M49.999,101.567c-25.002,0-41.176-25.49-41.176-25.49s16.174-25.491,41.176-25.491
+						s41.178,25.491,41.178,25.491S75.001,101.567,49.999,101.567z"/>
+				</svg>
+			</a>
+			<div class="textContainer">
+				<p class="copyright">©2015 Eye4Games</p>
+				<nav class="footerNav">
+					<a href="http://twitter.com/Eye4Games" target="_blank">Twitter</a>
+					<a href="http://facebook.com/Eye4Games" target="_blank">Facebook</a>
+					<a href="http://eye4games.tumblr.com" target="_blank">Tumblr</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
