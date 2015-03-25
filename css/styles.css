@@ -75,7 +75,7 @@ h2 {
   margin-bottom: .75em;
   text-transform: uppercase; }
 
-input.button, .backNow .backitButton {
+input.button, .backNow .backitButton, #quiz button {
   background: #c95ac7;
   border: none;
   border-radius: 5px;
@@ -89,7 +89,7 @@ input.button, .backNow .backitButton {
   text-decoration: none;
   text-shadow: 0 2px 1px rgba(27, 9, 27, 0.5);
   width: 100%; }
-  input.button:hover, .backNow .backitButton:hover {
+  input.button:hover, .backNow .backitButton:hover, #quiz button:hover {
     background: #b53bb3; }
 
 .container {
@@ -381,7 +381,9 @@ input.button {
     overflow: visible; }
   .mainFooter .Eye4Logo {
     margin-top: -30px;
-    margin-right: -100px; }
+    margin-right: -100px;
+    position: relative;
+    z-index: 1; }
   .mainFooter .textContainer {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -485,25 +487,43 @@ ul p {
   font-size: 1.6em;
   margin-bottom: 15px; }
 
-#quiz .answers {
-  margin-bottom: 30px; }
-  #quiz .answers label {
-    display: block;
-    font: 400 1.6em/1.75em "Libre Baskerville",Georgia,serif;
-    padding-bottom: 15px;
-    padding-left: 20px; }
-  #quiz .answers input {
-    margin-left: -20px; }
+#quiz section.videoPlayer {
+  background: url("../images/sebastian-bg.png") center center fixed, #1b091b;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  #quiz section.videoPlayer.withSebastian {
+    padding-bottom: 0; }
+  #quiz section.videoPlayer .introText {
+    color: white; }
 #quiz button {
-  clear: left;
-  float: left; }
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 300px; }
 #quiz .errorMessage {
   background: #c95ac7;
   color: white;
   font: 400 normal 1em/1 "Libre Baskerville",Georgia,serif;
   padding: 3px 5px; }
-#quiz .mainFooter {
-  margin-top: 50px; }
+
+.question {
+  text-align: left;
+  text-transform: none; }
+
+.answers {
+  margin-bottom: 30px; }
+  .answers label {
+    display: block;
+    font: 400 1.5em/1.75em "Libre Baskerville",Georgia,serif;
+    margin-bottom: 10px;
+    padding-bottom: 7px 5px;
+    padding-left: 25px; }
+    .answers label:hover {
+      background: rgba(27, 9, 27, 0.05); }
+  .answers input {
+    margin-left: -20px; }
+
+.transcriptHere {
+  padding-bottom: 50px; }
 
 @media screen and (max-width: 960px) {
   h1 {

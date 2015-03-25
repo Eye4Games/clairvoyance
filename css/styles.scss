@@ -361,6 +361,8 @@ input.button{
 	.Eye4Logo{
 		margin-top: -30px;
 		margin-right: -100px;
+		position: relative;
+		z-index: 1;
 		}
 	.textContainer{
 		@include flexbox();
