@@ -21,7 +21,7 @@ var validate = function()
 		'tut':0,
 		'caesar':0,
 		'evita':0,
-		'sacagewea':0
+		'sacagawea':0
 	};
 
 	var winner;
