@@ -26,14 +26,12 @@ var validate = function()
 
 	var winner;
 	var topScore = 0;
-	var errors = false;
 	for (var i = 0; i < 7; i++)
 	{
 		var answer = $('input[name=question' + (i + 1) + ']:checked').val();
 		if (!answer)
 		{
-			errors = true;
-			errorMssgs[i].style.display = "block";
+			continue;
 		}
 		ghostScore[answer]++;
 		if (ghostScore[answer] > topScore)
@@ -42,8 +40,12 @@ var validate = function()
 			topScore = ghostScore[answer];
 		}
 	}
-	if (errors)
+	if (!winner)
 	{
+		for (var i = 0; i < errorMssgs.length; i++)
+		{
+			errorMssgs[i].style.display = "block";
+		}
 		return;
 	}
 	window.open("http://clairvoyance.eye4games.com/quiz/results.html?choice=" + winner);
