@@ -39,7 +39,7 @@ img, svg {
   height: auto; }
 
 body {
-  background: rgba(69, 69, 69, 0.2);
+  background: rgba(56, 82, 56, 0.2);
   color: #682267;
   font-family: "Libre Baskerville";
   font-size: 62.5%; }
@@ -70,7 +70,7 @@ h3 {
 
 h2 {
   font: 400 normal 2.4em/1 "Corben";
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
   text-transform: uppercase; }
 
 input.button, .backNow .backitButton, #quiz button {
@@ -380,7 +380,7 @@ input.button {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font: 200 normal 2em/1 "Oswald",Helvetica, Arial, sans-serif;
+    font: 200 normal 2em/1 "Oswald", Helvetica, Arial, sans-serif;
     padding: 30px 0 0 20px;
     text-align: left;
     text-transform: uppercase; }
@@ -440,7 +440,7 @@ ul p {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   padding: 10px 20px 0;
-  font-size: .8em; }
+  font-size: 0.8em; }
   .exampleGray {
     background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.5));
     border-color: rgba(192, 192, 192, 0.2);
@@ -483,7 +483,9 @@ ul p {
 #quiz .errorMessage {
   background: #c95ac7;
   color: white;
-  font: 400 normal 1em/1 "Libre Baskerville",Georgia,serif;
+  font: 400 normal 1em/1 "Libre Baskerville", Georgia, serif;
+  margin: 10px auto 0;
+  max-width: 400px;
   padding: 3px 5px; }
 
 .question {
@@ -494,7 +496,7 @@ ul p {
   margin-bottom: 30px; }
   .answers label {
     display: block;
-    font: 400 1.5em/1.75em "Libre Baskerville",Georgia,serif;
+    font: 400 1.5em/1.75em "Libre Baskerville", Georgia, serif;
     margin-bottom: 10px;
     padding-bottom: 7px 5px;
     padding-left: 25px; }
@@ -514,7 +516,9 @@ ul p {
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-size: 6vw; } }
+    font-size: 6vw; }
+ }
+
 @media screen and (max-width: 800px) {
   .mainFooter .textContainer {
     -webkit-flex-wrap: wrap;
@@ -527,7 +531,9 @@ ul p {
   .mainFooter .copyright {
     text-align: right; }
   .mainFooter .footerNav {
-    padding-top: 10px; } }
+    padding-top: 10px; }
+ }
+
 @media screen and (max-width: 765px) {
   .pnpExample {
     display: none; }
@@ -535,7 +541,9 @@ ul p {
   .kickstarterCorner {
     width: 75px; }
     .kickstarterCorner svg {
-      height: 75px; } }
+      height: 75px; }
+ }
+
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-flex: 1;
@@ -561,7 +569,9 @@ ul p {
     .theCrew aside {
       text-align: center;
       padding-right: 0;
-      padding-bottom: 30px; } }
+      padding-bottom: 30px; }
+ }
+
 @media screen and (max-width: 580px) {
   .getUpdates {
     -webkit-flex-wrap: wrap;
@@ -595,7 +605,9 @@ ul p {
   .mainFooter .footerNav a {
     display: block;
     margin: 0;
-    padding: 10px 0 0; } }
+    padding: 10px 0 0; }
+ }
+
 @media screen and (max-width: 565px) {
   .introText {
     -webkit-flex-wrap: wrap;
@@ -651,7 +663,9 @@ ul p {
       width: 200px; }
 
   .sebastianWelcome {
-    display: none; } }
+    display: none; }
+ }
+
 @media screen and (max-width: 400px) {
   .kickstarterCorner {
     width: 50px; }
@@ -659,4 +673,5 @@ ul p {
       height: 50px; }
 
   h1 {
-    font-size: 4em; } }
+    font-size: 4em; }
+ }
