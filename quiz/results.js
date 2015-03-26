@@ -2,17 +2,17 @@
 var characterData = {
 	'zhengi':{
 		'name': 'Zheng Shi',
-		'video': 'https://www.kickstarter.com/projects/742911353/clairvoyance-card-game-a-battle-of-psychics-and-fu/widget/video.html',
+		'video': 'https://www.youtube.com/embed/yvXOD3yp3xs',
 		'intro': 'intro2'
 	},
 	'appleseed':{
 		'name': 'Johnny Appleseed',
-		'video': 'https://www.kickstarter.com/projects/742911353/clairvoyance-card-game-a-battle-of-psychics-and-fu/widget/video.html',
+		'video': 'https://www.youtube.com/embed/XhOUP5My9SI',
 		'intro': 'intro1'
 	},
 	'tut':{
 		'name': 'Tutankhamun',
-		'video': 'https://www.kickstarter.com/projects/742911353/clairvoyance-card-game-a-battle-of-psychics-and-fu/widget/video.html',
+		'video': 'https://www.youtube.com/embed/lACsQGoyYEQ',
 		'intro': 'intro1'
 	},
 	'caesar':{
@@ -27,7 +27,7 @@ var characterData = {
 	},
 	'sacagawea':{
 		'name': 'Sacagawea',
-		'video': 'https://www.kickstarter.com/projects/742911353/clairvoyance-card-game-a-battle-of-psychics-and-fu/widget/video.html',
+		'video': 'https://www.youtube.com/embed/yl9XOuBI4T0',
 		'intro': 'intro1'
 	}
 };
