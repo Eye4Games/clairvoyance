@@ -17,7 +17,7 @@
 
 @media screen and (max-width:765px){
 	.pnpExample{display: none;}
-	.kickstarterCorner{width: 75px;}
+	.kickstarterCorner{width: 75px; svg{height: 75px;}}
 }
 
 @media screen and (max-width:686px){
@@ -131,9 +131,10 @@
 			width: 200px;
 			}
 		}
+    .sebastianWelcome{display: none;}
 }//end 565px
 
 @media screen and (max-width:400px){
-	.kickstarterCorner{width: 50px;}
+	.kickstarterCorner{width: 50px; svg{height: 50px;}}
 	h1{font-size: 4em;}
 	}

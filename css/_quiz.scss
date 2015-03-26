@@ -2,8 +2,13 @@
 	section.videoPlayer{
 		background:url("../images/sebastian-bg.png") center center fixed, $darkPurple;
 		background-size: cover;
+		color: $lightPurple; 
 		&.withSebastian{padding-bottom: 0;}
-		.introText{color: white;}
+		.introText{
+    		color: white;
+    		h2{color: $lightPurple;}
+    		main{overflow: hidden;}
+            }
 		}
 	button{
 		@extend %button;
