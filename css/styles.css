@@ -503,6 +503,12 @@ ul p {
   .answers input {
     margin-left: -20px; }
 
+.learnMore a {
+  border-bottom: 1px solid #c95ac7;
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-bottom: 10px; }
+
 .transcriptHere {
   padding-bottom: 50px; }
 
