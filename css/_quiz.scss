@@ -1,0 +1,63 @@
+#quiz{
+	section.videoPlayer{
+		background:url("../images/sebastian-bg.png") center center fixed, $darkPurple;
+		background-size: cover;
+		color: $lightPurple; 
+		&.withSebastian{padding-bottom: 0;}
+		.introText{
+    		color: white;
+    		h2{color: $lightPurple;}
+    		main{overflow: hidden;}
+            }
+		}
+	button{
+		@extend %button;
+		cursor: pointer;
+		margin: 0 auto;
+		max-width: 300px;
+		}
+	.errorMessage{
+		background: $lightPurple;
+		color: white;
+		font: 400 normal 1em/1 "Libre Baskerville",Georgia,serif;
+		margin: 10px auto 0;
+		max-width: 400px;
+		padding: 3px 5px;
+		text-align: center;
+		}
+	}
+.question{
+	text-align: left;
+	text-transform: none;
+	}
+.answers{
+	margin-bottom: 30px;
+	label{
+		display: block;
+		font: 400 1.5em/1.75em "Libre Baskerville",Georgia,serif;
+		margin-bottom: 10px;
+		padding-bottom: 7px 5px;
+		padding-left: 25px;
+		&:hover{background: rgba($darkPurple,.05);}
+		}
+	input{margin-left: -20px;}
+	}
+.learnMore a{
+    border-bottom: 1px solid $lightPurple;
+    text-decoration: none;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    }
+.transcriptHere{
+	padding-bottom: 50px;
+	}
+
+
+
+
+
+
+
+
+
+

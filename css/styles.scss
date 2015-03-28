@@ -5,6 +5,18 @@ $darkPurple: darken($mainPurple,20%);
 $lightPurple: lighten($mainPurple,30%);
 $mainYellow:#e3ba5b;
 
+//MIXINS
+@mixin flexbox(){
+	display: -webkit-flex; display: -ms-flexbox; display: flex;
+	}
+@mixin flexWrap($opt){
+	-webkit-flex-wrap: $opt; -ms-flex-wrap: $opt; flex-wrap: $opt;
+	}
+
+@mixin flex($values) {
+	-webkit-flex: $values;-ms-flex: $values;flex: $values;
+	}
+
 
 *{
 	box-sizing: border-box;
@@ -22,6 +34,12 @@ body{
 p{
 	font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
 	padding-bottom: 30px;
+	i{font-style: italic;}
+	b{font-weight: 600}
+	a{
+		color: $lightPurple;
+		&:hover{color: darken($lightPurple, 20%);}
+		}
 	}
 h1{
 	font: 400 normal 6em/.8em "Corben";
@@ -32,7 +50,7 @@ h3{
 	color: $lightPurple;
 	font-style: italic;
 	font-size: 1.6em;
-	line-height: 1em;
+	line-height: 1.1em;
 	margin-top: 15px;
 	}
 h2{
@@ -57,9 +75,9 @@ h2{
 	}
 
 .container{
-	display: -webkit-flex; display: flex;
-	-webkit-flex-flow: row nowrap; flex-flow: row nowrap;
-	justify-content: space-between;
+	@include flexbox() ;
+	@include flexWrap(nowrap);
+	-webkit-justify-content: space-between;-ms-flex-pack: justify; justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1000px;
 	overflow: hidden;
@@ -91,6 +109,15 @@ header{
 	}
 	
 //
+//******************************KICKSTARTER CORNER//
+.kickstarterCorner{
+	position: absolute;
+	right: 0;
+	top: 0;
+	&:hover .style5{fill: white;}
+	}	
+	
+//
 //*******************************MAIN VIDEO SECTION
 section.videoPlayer{
 	background: url("../images/video-eyes.png") center center fixed, linear-gradient(to bottom, rgba($darkPurple,1), rgba($darkPurple,.75)), url("../images/purple-bg.jpg");
@@ -102,11 +129,13 @@ section.videoPlayer{
 		}
 	.videoWrapper{
 		box-shadow: 0px 3px 5px black;
-		padding-bottom: 75%; // 4x3 ratio
+		
 		height: 0;
 		overflow: hidden;
 		position: relative;
-		iframe{
+		&.sixteenByNine{padding-bottom: 56.25%;} //16x9 ratio
+		&.fourByThree{padding-bottom: 75%;} //4x3 ratio
+		iframe, video{
 			position: absolute;
             top: 0;
             left: 0;
@@ -124,12 +153,12 @@ section.videoPlayer{
 	padding: 60px 0 0;
 	aside{
 		// width:42%;
-		-webkit-box-flex: 2 42%; -webkit-flex: 2 42%; flex: 2 42%;
+		@include flex(0 0 42%);
 		padding-right: 30px;
 		text-align: right;
 		h1 span{display: inline-block;}
 		ul.infoText{
-			border-top: 2px solid rgba(black,.2);
+			border-top: 2px groove white;
 			color: $lightPurple;
 			font: 400 normal 2em/.75em "Corben";
 			padding-top: 15px;
@@ -138,16 +167,15 @@ section.videoPlayer{
 		}
 	.mainText{
 		// width: 58%;
-		-webkit-box-flex: 3 58%; -webkit-flex: 3 58%; flex: 3 58%;
+		@include flex(0 0 58%);
 		}
 	}
-.introText h1{border-bottom: 1px solid rgba(white,.5);}
 
 
 //
 //*******************************UPDATES FORM
 .characterImage{
-	-webkit-box-flex: 3 42%; -webkit-flex: 3 42%; flex: 3 42%;
+	@include flex(0 0 42%);
 	overflow: hidden;
 	}
 .getUpdates{
@@ -157,13 +185,12 @@ section.videoPlayer{
 	h3{margin-bottom: 20px;}
 	}
 .getUpdates .mainText{
-	-webkit-box-flex: 4 56.5%; -webkit-flex: 4 56.5%; flex: 4 56.5%;
+	@include flex(0 0 56.5%);
 	-webkit-align-self: center; align-self: center;
 	padding-right: 10px;
 	}
 .mc-field-group{
-	display: -webkit-flex;
-	display: flex;
+	@include flexbox();
 	padding-bottom: 10px;
 	label{
 		position: absolute;
@@ -178,7 +205,7 @@ section.videoPlayer{
 	input{
 		border: none;
 		border-radius: 5px;
-		-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+		@include flex(1 100%);
 		padding: 10px;
 		&[placeholder]{font: italic 400 1.2em/1 "Libre Baskerville"}
 		}
@@ -213,17 +240,37 @@ input.button{
 		}
 	aside{
 		-webkit-align-self: center; align-self: center;
-		-webkit-box-flex: 2 27.5%; -webkit-flex: 2 27.5%; flex: 2 27.5%;
+		@include flex(2 27.5%);
 		padding-right: 10px;
 		text-align: left;
 		}
 	.mainImage{
-		-webkit-box-flex: 3 72.5%; -webkit-flex:3 72.5%; flex:3 72.5%;
+		@include flex(3 72.5%);
 		overflow: hidden;
 		padding-right: 20px;
 		}
 	.backitButton{
 		@extend %button;
+		}
+	}	
+
+//
+//*************************PRINT AND PLAY SECTION
+.printPlay{
+	justify-content: flex-end;
+	margin-bottom: 30px;
+	.mainText{
+		@include flexbox();
+		@include flex(0 58%);
+		max-width: 546px;
+		p, .pnpExample{@include flex(1 50%);}
+		p{
+			align-self: center;
+			color: gray;
+			font: normal 1.8em/1.7 "Corben";
+			border-top: 2px groove white;
+			padding: 10px 10px 0 0;
+			}
 		}
 	}	
 
@@ -235,11 +282,9 @@ input.button{
 		max-width: 700px;
 		margin: 0 auto 30px;
 		text-align: center;
-		/*
 		padding: 0 15px;
 		&:first-child{padding-left: 0;}
 		&:last-child{padding-right: 0;}
-		*/
 		p{
 			font-style: italic;
 			background: rgba($lightPurple,.2);
@@ -274,9 +319,10 @@ input.button{
 	padding: 30px 0 50px;
 	}		
 .theCrew{
+	p{font-size: 1.55em;}
 	aside{
 		// width:27.5%;
-		-webkit-box-flex: 1 27.5%; -webkit-flex: 1 27.5%; flex: 1 27.5%;
+		@include flex(0 0 27.5%);
 		h1{
 			border-bottom: none;
 			color: gray;
@@ -284,20 +330,24 @@ input.button{
 		}
 	.mainText{
 		// width: 72.5%;
-		-webkit-box-flex: 3 72.5%; -webkit-flex: 3 72.5%; flex: 3 72.5%;
-		//margin-top: -10px;
+		@include flex(0 0 72.5%);
 		.crewProfile{
-			overflow: hidden;
+			@include flexbox();
+			-webkit-align-items: flex-start; align-items: flex-start;
 			margin-bottom: 15px;
 			}
-		img{
-			float: left;
-			margin-right: -152px;
-			max-width: 142px;
-			}
+		img{width: 142px;}
 		.crewProfileText{
-			padding-left: 152px;
+			@include flex(1);
+			padding-left: 10px;
 			}
+		}
+	}
+.additionalSupport{
+	aside h2{
+		color: gray;
+		text-shadow: -1px 2px 1px rgba(black,.2);
+		text-transform: none;
 		}
 	}
 	
@@ -311,23 +361,25 @@ input.button{
 	.Eye4Logo{
 		margin-top: -30px;
 		margin-right: -100px;
+		position: relative;
+		z-index: 1;
 		}
 	.textContainer{
-		display: -webkit-flex; display: flex;
-		-webkit-flex-flow: row nowrap; flex-flow: row nowrap;
+		@include flexbox();
+		@include flexWrap(nowrap);
 		width: 100%;
 		padding-left: 120px;
 		}
 	.copyright{
 		color: white;
-		-webkit-box-flex: 1; -webkit-flex: 1; flex: 1;
+		@include flex(1);
 		font: 200 normal 2em/1 "Oswald",Helvetica, Arial, sans-serif;
 		padding: 30px 0 0 20px;
 		text-align: left;
 		text-transform: uppercase;
 		}
 	.footerNav{
-		-webkit-box-flex: 2; -webkit-flex: 2; flex: 2;
+		@include flex(2);
 		padding-top:30px;
 		a{
 			color: $lightPurple;
@@ -340,5 +392,7 @@ input.button{
 			}
 		}
 	}
-	
+
+@import "rules";
+@import "quiz";
 @import "media-queries";

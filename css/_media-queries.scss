@@ -5,21 +5,25 @@
 @media screen and (max-width:800px){
 	.mainFooter{
 		.textContainer{
-			-webkit-flex-flow: wrap; flex-flow: wrap;
+			@include flexWrap(wrap);
 			}
 		.copyright, .footerNav{
-			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			@include flex(1 100%);
 			}
 		.copyright{text-align: right;}
 		.footerNav{padding-top: 10px;}
 		}
 }
 
+@media screen and (max-width:765px){
+	.pnpExample{display: none;}
+	.kickstarterCorner{width: 75px; svg{height: 75px;}}
+}
 
 @media screen and (max-width:686px){
 	.getUpdates{
 		.mainText, .characterImage{
-			-webkit-box-flex: 1; -webkit-flex:1; flex:1;
+			@include flex(1);
 			}
 		.colorWrap{
 			height: 80%;
@@ -28,14 +32,13 @@
 		}	
 	.backNow{
 		aside, .mainImage, .colorWrap{
-			-webkit-box-flex: 1; -webkit-flex:1; flex:1;
+			@include flex(1);
 			}
 		}
 	.theCrew{
-		-webkit-flex-flow: wrap;
-		flex-flow: wrap;
+		@include flexWrap(wrap);
 		aside, .mainText{
-			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			@include flex(1 100%);
 			}
 		aside{
 			text-align: center;
@@ -47,7 +50,7 @@
 
 @media screen and (max-width:580px){
 	.getUpdates{
-		-webkit-flex-flow: wrap; flex-flow:wrap;
+		@include flexWrap(wrap);
 		h1, h3{text-align: center;}
 		form{margin-bottom: 10px;}
 		.mc-field-group{
@@ -60,7 +63,7 @@
 			}
 		.mainText{padding-right: 0}
 		.mainText, .characterImage{
-			-webkit-box-flex: 1 100%; -webkit-flex:1 100%; flex:1 100%;
+			@include flex(1 100%);
 			}
 		.colorWrap{
 			height: auto;
@@ -82,9 +85,9 @@
 
 @media screen and (max-width:565px){
 	.introText{
-		-webkit-flex-flow: wrap; flex-flow: wrap;
+		@include flexWrap(wrap);
 		aside, .mainText{
-			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			@include flex(1 100%);
 			}
 		aside{
 			text-align: center;
@@ -92,12 +95,14 @@
 			padding-bottom: 30px;
 			}
 		}
+		
+	.printPlay .mainText{@include flex(1 100%);}
 			
 	.backNow{
-		-webkit-flex-flow: wrap; flex-flow:wrap;
+		@include flexWrap(wrap);
 		margin-bottom: 30px;
 		aside, .mainImage{
-			-webkit-box-flex: 1 100%; -webkit-flex: 1 100%; flex: 1 100%;
+			@include flex(1 100%);
 			}
 		aside{
 			text-align: center;
@@ -114,15 +119,22 @@
 		
 	.theCrew .mainText{
 		text-align: center;
-		.crewProfileText{padding-left: 0;}
+		.crewProfile{
+			@include flexWrap(wrap);
+			}
+		.crewProfileText{
+			padding-left: 0;
+			@include flex(1 100%);
+			}
 		img{
-			float: none;
-			margin-right: 0;
-			max-width: 200px;
+			margin: 0 auto;
+			width: 200px;
 			}
 		}
+    .sebastianWelcome{display: none;}
 }//end 565px
 
 @media screen and (max-width:400px){
+	.kickstarterCorner{width: 50px; svg{height: 50px;}}
 	h1{font-size: 4em;}
 	}
