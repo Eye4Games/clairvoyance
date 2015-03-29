@@ -18,6 +18,13 @@
 @media screen and (max-width:765px){
 	.pnpExample{display: none;}
 	.kickstarterCorner{width: 75px; svg{height: 75px;}}
+	.someQuotes{
+		@include flexWrap(wrap);
+		blockquote{
+			@include flex(0 100%);
+			padding: 0;
+			}
+		}
 }
 
 @media screen and (max-width:686px){

@@ -32,6 +32,8 @@ table {
   border-spacing: 0; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 img, svg {
@@ -39,7 +41,7 @@ img, svg {
   height: auto; }
 
 body {
-  background: rgba(56, 82, 56, 0.2);
+  background: rgba(69, 69, 69, 0.2);
   color: #682267;
   font-family: "Libre Baskerville";
   font-size: 62.5%; }
@@ -70,13 +72,14 @@ h3 {
 
 h2 {
   font: 400 normal 2.4em/1 "Corben";
-  margin-bottom: 0.75em;
+  margin-bottom: .75em;
   text-transform: uppercase; }
 
 input.button, .backNow .backitButton, #quiz button {
   background: #c95ac7;
   border: none;
   border-radius: 5px;
+  -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   color: white;
   display: block;
@@ -113,6 +116,8 @@ header {
     margin: 20px auto 0;
     overflow: hidden; }
   header nav.mainNav {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0.3)));
+    background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     border-bottom: 3px solid rgba(201, 90, 199, 0.2);
     font-size: 1.8em;
@@ -133,6 +138,8 @@ header {
     fill: white; }
 
 section.videoPlayer {
+  background: url("../images/video-eyes.png") center center fixed, -webkit-gradient(linear, left top, left bottom, from(#1b091b), to(rgba(27, 9, 27, 0.75))), url("../images/purple-bg.jpg");
+  background: url("../images/video-eyes.png") center center fixed, -webkit-linear-gradient(top, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   background: url("../images/video-eyes.png") center center fixed, linear-gradient(to bottom, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   padding: 20px;
   text-align: center; }
@@ -140,6 +147,7 @@ section.videoPlayer {
     max-width: 800px;
     margin: 0 auto; }
   section.videoPlayer .videoWrapper {
+    -webkit-box-shadow: 0px 3px 5px black;
     box-shadow: 0px 3px 5px black;
     height: 0;
     overflow: hidden;
@@ -199,6 +207,7 @@ section.videoPlayer {
   -ms-flex: 0 0 56.5%;
   flex: 0 0 56.5%;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -235,6 +244,7 @@ input.button {
 .colorWrap {
   background: rgba(27, 9, 27, 0.05);
   border-radius: 6px;
+  -webkit-box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   position: absolute;
   left: 20px;
@@ -248,6 +258,7 @@ input.button {
   top: 25%; }
 .backNow aside {
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
@@ -262,6 +273,8 @@ input.button {
   padding-right: 20px; }
 
 .printPlay {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-bottom: 30px; }
   .printPlay .mainText {
@@ -277,6 +290,8 @@ input.button {
       -ms-flex: 1 50%;
       flex: 1 50%; }
     .printPlay .mainText p {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
       align-self: center;
       color: gray;
       font: normal 1.8em/1.7 "Corben";
@@ -319,6 +334,8 @@ input.button {
       margin-top: 0; }
 
 .darkenWrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0)));
+  background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   padding: 30px 0 50px; }
 
@@ -340,6 +357,7 @@ input.button {
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 15px; }
   .theCrew .mainText img {
@@ -380,7 +398,7 @@ input.button {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font: 200 normal 2em/1 "Oswald", Helvetica, Arial, sans-serif;
+    font: 200 normal 2em/1 "Oswald",Helvetica, Arial, sans-serif;
     padding: 30px 0 0 20px;
     text-align: left;
     text-transform: uppercase; }
@@ -435,13 +453,18 @@ ul p {
   max-width: 800px; }
 
 .example {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 90, 199, 0.4)), to(rgba(201, 90, 199, 0.2)));
+  background: -webkit-linear-gradient(top, rgba(201, 90, 199, 0.4), rgba(201, 90, 199, 0.2));
   background: linear-gradient(to bottom, rgba(201, 90, 199, 0.4), rgba(201, 90, 199, 0.2));
   border: 4px outset rgba(201, 90, 199, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   padding: 10px 20px 0;
-  font-size: 0.8em; }
+  font-size: .8em; }
   .exampleGray {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.7)), to(rgba(128, 128, 128, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.5));
     background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.5));
     border-color: rgba(192, 192, 192, 0.2);
     color: white; }
@@ -466,6 +489,7 @@ ul p {
 
 #quiz section.videoPlayer {
   background: url("../images/sebastian-bg.png") center center fixed, #1b091b;
+  -webkit-background-size: cover;
   background-size: cover;
   color: #c95ac7; }
   #quiz section.videoPlayer.withSebastian {
@@ -483,7 +507,7 @@ ul p {
 #quiz .errorMessage {
   background: #c95ac7;
   color: white;
-  font: 400 normal 1em/1 "Libre Baskerville", Georgia, serif;
+  font: 400 normal 1em/1 "Libre Baskerville",Georgia,serif;
   margin: 10px auto 0;
   max-width: 400px;
   padding: 3px 5px;
@@ -497,7 +521,7 @@ ul p {
   margin-bottom: 30px; }
   .answers label {
     display: block;
-    font: 400 1.5em/1.75em "Libre Baskerville", Georgia, serif;
+    font: 400 1.5em/1.75em "Libre Baskerville",Georgia,serif;
     margin-bottom: 10px;
     padding-bottom: 7px 5px;
     padding-left: 25px; }
@@ -517,9 +541,7 @@ ul p {
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-size: 6vw; }
- }
-
+    font-size: 6vw; } }
 @media screen and (max-width: 800px) {
   .mainFooter .textContainer {
     -webkit-flex-wrap: wrap;
@@ -532,9 +554,7 @@ ul p {
   .mainFooter .copyright {
     text-align: right; }
   .mainFooter .footerNav {
-    padding-top: 10px; }
- }
-
+    padding-top: 10px; } }
 @media screen and (max-width: 765px) {
   .pnpExample {
     display: none; }
@@ -543,8 +563,16 @@ ul p {
     width: 75px; }
     .kickstarterCorner svg {
       height: 75px; }
- }
 
+  .someQuotes {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .someQuotes blockquote {
+      -webkit-flex: 0 100%;
+      -ms-flex: 0 100%;
+      flex: 0 100%;
+      padding: 0; } }
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-flex: 1;
@@ -570,9 +598,7 @@ ul p {
     .theCrew aside {
       text-align: center;
       padding-right: 0;
-      padding-bottom: 30px; }
- }
-
+      padding-bottom: 30px; } }
 @media screen and (max-width: 580px) {
   .getUpdates {
     -webkit-flex-wrap: wrap;
@@ -606,9 +632,7 @@ ul p {
   .mainFooter .footerNav a {
     display: block;
     margin: 0;
-    padding: 10px 0 0; }
- }
-
+    padding: 10px 0 0; } }
 @media screen and (max-width: 565px) {
   .introText {
     -webkit-flex-wrap: wrap;
@@ -664,9 +688,7 @@ ul p {
       width: 200px; }
 
   .sebastianWelcome {
-    display: none; }
- }
-
+    display: none; } }
 @media screen and (max-width: 400px) {
   .kickstarterCorner {
     width: 50px; }
@@ -674,5 +696,5 @@ ul p {
       height: 50px; }
 
   h1 {
-    font-size: 4em; }
- }
+    font-size: 4em; } }
+
