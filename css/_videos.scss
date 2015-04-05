@@ -24,15 +24,15 @@ label[for^="videoChoice"]{
 		padding: 5px 0;
 		font-style: italic;
 		}
+	input[type="radio"]{
+		position: absolute;
+		visibility: hidden;	
+		}
 	&:hover img{opacity: .8}
 	& > input:checked + img{opacity: 1;}
 	& > input:checked ~ small{background: rgba(white,.2);color: white;}
 	&:nth-child(3n+3){margin-right: 0;}
 	&:first-child, &:nth-child(4){margin-left: 0;}
-	}
-input[type="radio"]{
-	position: absolute;
-	visibility: hidden;	
 	}
 	
 #videos .mainContent{

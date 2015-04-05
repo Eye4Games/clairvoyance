@@ -206,8 +206,8 @@ section.videoPlayer {
   -webkit-flex: 0 0 56.5%;
   -ms-flex: 0 0 56.5%;
   flex: 0 0 56.5%;
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
+  -webkit-align-self: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -257,8 +257,8 @@ input.button {
   height: 50%;
   top: 25%; }
 .backNow aside {
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
+  -webkit-align-self: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
@@ -290,8 +290,8 @@ input.button {
       -ms-flex: 1 50%;
       flex: 1 50%; }
     .printPlay .mainText p {
-      -webkit-align-self: center;
       -ms-flex-item-align: center;
+      -webkit-align-self: center;
       align-self: center;
       color: gray;
       font: normal 1.8em/1.7 "Corben";
@@ -571,6 +571,9 @@ label[for^="videoChoice"] {
     color: white;
     padding: 5px 0;
     font-style: italic; }
+  label[for^="videoChoice"] input[type="radio"] {
+    position: absolute;
+    visibility: hidden; }
   label[for^="videoChoice"]:hover img {
     opacity: .8; }
   label[for^="videoChoice"] > input:checked + img {
@@ -582,10 +585,6 @@ label[for^="videoChoice"] {
     margin-right: 0; }
   label[for^="videoChoice"]:first-child, label[for^="videoChoice"]:nth-child(4) {
     margin-left: 0; }
-
-input[type="radio"] {
-  position: absolute;
-  visibility: hidden; }
 
 #videos .mainContent {
   text-align: center; }
@@ -775,4 +774,5 @@ input[type="radio"] {
 
   h1 {
     font-size: 4em; } }
+
 
