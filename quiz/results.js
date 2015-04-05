@@ -2,32 +2,32 @@
 var characterData = {
 	'zhengi':{
 		'name': 'Zheng Shi',
-		'video': 'https://www.youtube.com/embed/yvXOD3yp3xs',
+		'video': 'https://www.youtube.com/embed/yvXOD3yp3xs?rel=0&amp;showinfo=0',
 		'intro': 'intro2'
 	},
 	'appleseed':{
 		'name': 'Johnny Appleseed',
-		'video': 'https://www.youtube.com/embed/XhOUP5My9SI',
+		'video': 'https://www.youtube.com/embed/XhOUP5My9SI?rel=0&amp;showinfo=0',
 		'intro': 'intro1'
 	},
 	'tut':{
 		'name': 'Tutankhamun',
-		'video': 'https://www.youtube.com/embed/lACsQGoyYEQ',
+		'video': 'https://www.youtube.com/embed/lACsQGoyYEQ?rel=0&amp;showinfo=0',
 		'intro': 'intro1'
 	},
 	'caesar':{
 		'name': 'Julius Caesar',
-		'video': 'https://www.youtube.com/embed/D2uIzuRGfno',
+		'video': 'https://www.youtube.com/embed/D2uIzuRGfno?rel=0&amp;showinfo=0',
 		'intro': 'intro2'
 	},
 	'evita':{
 		'name': 'Evita Peron',
-		'video': 'https://www.youtube.com/embed/kMIYECJendc',
+		'video': 'https://www.youtube.com/embed/kMIYECJendc?rel=0&amp;showinfo=0',
 		'intro': 'intro2'
 	},
 	'sacagawea':{
 		'name': 'Sacagawea',
-		'video': 'https://www.youtube.com/embed/yl9XOuBI4T0',
+		'video': 'https://www.youtube.com/embed/yl9XOuBI4T0?rel=0&amp;showinfo=0',
 		'intro': 'intro1'
 	}
 };
