@@ -1,0 +1,42 @@
+.videoSelect{
+	@include flexWrap(wrap);
+	justify-content: center;
+	}
+label[for^="videoChoice"]{
+	@include flex(0 1 30%);
+	background: linear-gradient(to bottom, rgba($darkPurple,.8),rgba($darkPurple,.5));
+	border: 2px white outset;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0 15px 30px;
+	padding: 2px 2px 1px;
+	img{
+		border-radius: 2px;
+		width: 100%;
+		opacity: .5;
+		transition: .2s opacity;
+		}
+	small{
+		display: block;
+		background: $darkPurple;
+		color: white;
+		padding: 5px 0;
+		font-style: italic;
+		}
+	&:hover img{opacity: .8}
+	& > input:checked + img{opacity: 1;}
+	& > input:checked ~ small{background: rgba(white,.2);color: white;}
+	&:nth-child(3n+3){margin-right: 0;}
+	&:first-child, &:nth-child(4){margin-left: 0;}
+	}
+input[type="radio"]{
+	position: absolute;
+	visibility: hidden;	
+	}
+	
+#videos .mainContent{
+	text-align: center;
+	}
+#videos h3{
+	margin-bottom: 20px;
+	}
