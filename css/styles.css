@@ -206,8 +206,8 @@ section.videoPlayer {
   -webkit-flex: 0 0 56.5%;
   -ms-flex: 0 0 56.5%;
   flex: 0 0 56.5%;
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -257,8 +257,8 @@ input.button {
   height: 50%;
   top: 25%; }
 .backNow aside {
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
@@ -290,8 +290,8 @@ input.button {
       -ms-flex: 1 50%;
       flex: 1 50%; }
     .printPlay .mainText p {
-      -ms-flex-item-align: center;
       -webkit-align-self: center;
+      -ms-flex-item-align: center;
       align-self: center;
       color: gray;
       font: normal 1.8em/1.7 "Corben";
@@ -543,9 +543,9 @@ ul p {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
 label[for^="videoChoice"] {
   -webkit-flex: 0 1 30%;
@@ -775,5 +775,4 @@ input[type="radio"] {
 
   h1 {
     font-size: 4em; } }
-
 

@@ -1,6 +1,7 @@
 .videoSelect{
 	@include flexWrap(wrap);
-	justify-content: center;
+	-webkit-justify-content:space-around;
+	justify-content: space-around;
 	}
 label[for^="videoChoice"]{
 	@include flex(0 1 30%);
