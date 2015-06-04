@@ -392,6 +392,22 @@ input.button{
 			}
 		}
 	}
+	
+.awardsGranted{
+	display: block;
+	text-align: center;
+	h3{
+		color: gray;
+		margin-bottom: 20px;
+		}
+	}
+.gmgSeal{
+	margin: 0 auto;
+	svg{
+		fill: $mainPurple;
+		&:hover{fill:$lightPurple;}
+		}
+	}
 
 @import "rules";
 @import "quiz";

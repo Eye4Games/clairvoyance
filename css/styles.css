@@ -206,8 +206,8 @@ section.videoPlayer {
   -webkit-flex: 0 0 56.5%;
   -ms-flex: 0 0 56.5%;
   flex: 0 0 56.5%;
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -257,8 +257,8 @@ input.button {
   height: 50%;
   top: 25%; }
 .backNow aside {
-  -ms-flex-item-align: center;
   -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
@@ -290,8 +290,8 @@ input.button {
       -ms-flex: 1 50%;
       flex: 1 50%; }
     .printPlay .mainText p {
-      -ms-flex-item-align: center;
       -webkit-align-self: center;
+      -ms-flex-item-align: center;
       align-self: center;
       color: gray;
       font: normal 1.8em/1.7 "Corben";
@@ -416,6 +416,20 @@ input.button {
       text-shadow: 0 1px 2px #1b091b; }
       .mainFooter .footerNav a:hover {
         color: #e2a7e1; }
+
+.awardsGranted {
+  display: block;
+  text-align: center; }
+  .awardsGranted h3 {
+    color: gray;
+    margin-bottom: 20px; }
+
+.gmgSeal {
+  margin: 0 auto; }
+  .gmgSeal svg {
+    fill: #682267; }
+    .gmgSeal svg:hover {
+      fill: #c95ac7; }
 
 #rules aside h2 {
   text-transform: none; }
@@ -774,5 +788,4 @@ label[for^="videoChoice"] {
 
   h1 {
     font-size: 4em; } }
-
 
