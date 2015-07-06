@@ -115,7 +115,27 @@ header{
 	right: 0;
 	top: 0;
 	&:hover .style5{fill: white;}
-	}	
+	}
+	
+//
+//***********************************PREORDER LINK//
+.preorderLink{
+    background: $lightPurple;
+    box-shadow: 0 -2px 5px rgba($darkPurple,.3) inset;
+    &:hover{background: darken($lightPurple,10%);}
+    &Text{
+        color: white;
+        font-size: medium;
+        font-style: italic;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            text-shadow: 0 2px 3px rgba($darkPurple,.3);
+            }
+        }
+    }	
 	
 //
 //*******************************MAIN VIDEO SECTION

@@ -32,8 +32,6 @@ table {
   border-spacing: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 img, svg {
@@ -79,7 +77,6 @@ input.button, .backNow .backitButton, #quiz button {
   background: #c95ac7;
   border: none;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 1px rgba(255, 255, 255, 0.5);
   color: white;
   display: block;
@@ -116,8 +113,6 @@ header {
     margin: 20px auto 0;
     overflow: hidden; }
   header nav.mainNav {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0.3)));
-    background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05) 70%, rgba(27, 9, 27, 0.3));
     border-bottom: 3px solid rgba(201, 90, 199, 0.2);
     font-size: 1.8em;
@@ -137,9 +132,23 @@ header {
   .kickstarterCorner:hover .style5 {
     fill: white; }
 
+.preorderLink {
+  background: #c95ac7;
+  box-shadow: 0 -2px 5px rgba(27, 9, 27, 0.3) inset; }
+  .preorderLink:hover {
+    background: #b53bb3; }
+  .preorderLinkText {
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none; }
+    .preorderLinkText:hover {
+      text-shadow: 0 2px 3px rgba(27, 9, 27, 0.3); }
+
 section.videoPlayer {
-  background: url("../images/video-eyes.png") center center fixed, -webkit-gradient(linear, left top, left bottom, from(#1b091b), to(rgba(27, 9, 27, 0.75))), url("../images/purple-bg.jpg");
-  background: url("../images/video-eyes.png") center center fixed, -webkit-linear-gradient(top, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   background: url("../images/video-eyes.png") center center fixed, linear-gradient(to bottom, #1b091b, rgba(27, 9, 27, 0.75)), url("../images/purple-bg.jpg");
   padding: 20px;
   text-align: center; }
@@ -147,7 +156,6 @@ section.videoPlayer {
     max-width: 800px;
     margin: 0 auto; }
   section.videoPlayer .videoWrapper {
-    -webkit-box-shadow: 0px 3px 5px black;
     box-shadow: 0px 3px 5px black;
     height: 0;
     overflow: hidden;
@@ -207,7 +215,6 @@ section.videoPlayer {
   -ms-flex: 0 0 56.5%;
   flex: 0 0 56.5%;
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
   padding-right: 10px; }
 
@@ -244,7 +251,6 @@ input.button {
 .colorWrap {
   background: rgba(27, 9, 27, 0.05);
   border-radius: 6px;
-  -webkit-box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   box-shadow: 0 2px 3px rgba(27, 9, 27, 0.1) inset;
   position: absolute;
   left: 20px;
@@ -256,15 +262,16 @@ input.button {
 .backNow .colorWrap {
   height: 50%;
   top: 25%; }
+
 .backNow aside {
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
   align-self: center;
   -webkit-flex: 2 27.5%;
   -ms-flex: 2 27.5%;
   flex: 2 27.5%;
   padding-right: 10px;
   text-align: left; }
+
 .backNow .mainImage {
   -webkit-flex: 3 72.5%;
   -ms-flex: 3 72.5%;
@@ -273,8 +280,6 @@ input.button {
   padding-right: 20px; }
 
 .printPlay {
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-bottom: 30px; }
   .printPlay .mainText {
@@ -290,8 +295,6 @@ input.button {
       -ms-flex: 1 50%;
       flex: 1 50%; }
     .printPlay .mainText p {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
       color: gray;
       font: normal 1.8em/1.7 "Corben";
@@ -334,13 +337,12 @@ input.button {
       margin-top: 0; }
 
 .darkenWrap {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 9, 27, 0.05)), to(rgba(27, 9, 27, 0)));
-  background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   background: linear-gradient(to bottom, rgba(27, 9, 27, 0.05), rgba(27, 9, 27, 0));
   padding: 30px 0 50px; }
 
 .theCrew p {
   font-size: 1.55em; }
+
 .theCrew aside {
   -webkit-flex: 0 0 27.5%;
   -ms-flex: 0 0 27.5%;
@@ -348,6 +350,7 @@ input.button {
   .theCrew aside h1 {
     border-bottom: none;
     color: gray; }
+
 .theCrew .mainText {
   -webkit-flex: 0 0 72.5%;
   -ms-flex: 0 0 72.5%;
@@ -357,7 +360,6 @@ input.button {
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: flex-start;
-    -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 15px; }
   .theCrew .mainText img {
@@ -398,7 +400,7 @@ input.button {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font: 200 normal 2em/1 "Oswald",Helvetica, Arial, sans-serif;
+    font: 200 normal 2em/1 "Oswald", Helvetica, Arial, sans-serif;
     padding: 30px 0 0 20px;
     text-align: left;
     text-transform: uppercase; }
@@ -433,19 +435,25 @@ input.button {
 
 #rules aside h2 {
   text-transform: none; }
+
 #rules aside h2 {
   color: gray; }
+
 #rules ol ul {
   margin-left: 20px; }
+
 #rules .mainText li {
   font: normal 400 1.6em/1.75em "Libre Baskerville", Georgia, serif;
   padding-bottom: 15px;
   padding-left: 15px;
   margin-left: 20px; }
+
 #rules .mainText ul {
   list-style-type: disc; }
+
 #rules .mainText ol {
   list-style-type: decimal; }
+
 #rules .mainText img, #rules aside img {
   max-width: 100%;
   width: 100%;
@@ -467,18 +475,13 @@ ul p {
   max-width: 800px; }
 
 .example {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 90, 199, 0.4)), to(rgba(201, 90, 199, 0.2)));
-  background: -webkit-linear-gradient(top, rgba(201, 90, 199, 0.4), rgba(201, 90, 199, 0.2));
   background: linear-gradient(to bottom, rgba(201, 90, 199, 0.4), rgba(201, 90, 199, 0.2));
   border: 4px outset rgba(201, 90, 199, 0.2);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   padding: 10px 20px 0;
   font-size: .8em; }
   .exampleGray {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.7)), to(rgba(128, 128, 128, 0.5)));
-    background: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.5));
     background: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.5));
     border-color: rgba(192, 192, 192, 0.2);
     color: white; }
@@ -495,6 +498,7 @@ ul p {
   font: 400 normal 2em/1.2em "Corben";
   margin-bottom: 5px;
   text-transform: uppercase; }
+
 .characterStuff h4 {
   color: #c95ac7;
   font-style: italic;
@@ -503,7 +507,6 @@ ul p {
 
 #quiz section.videoPlayer {
   background: url("../images/sebastian-bg.png") center center fixed, #1b091b;
-  -webkit-background-size: cover;
   background-size: cover;
   color: #c95ac7; }
   #quiz section.videoPlayer.withSebastian {
@@ -514,14 +517,16 @@ ul p {
       color: #c95ac7; }
     #quiz section.videoPlayer .introText main {
       overflow: hidden; }
+
 #quiz button {
   cursor: pointer;
   margin: 0 auto;
   max-width: 300px; }
+
 #quiz .errorMessage {
   background: #c95ac7;
   color: white;
-  font: 400 normal 1em/1 "Libre Baskerville",Georgia,serif;
+  font: 400 normal 1em/1 "Libre Baskerville", Georgia, serif;
   margin: 10px auto 0;
   max-width: 400px;
   padding: 3px 5px;
@@ -535,7 +540,7 @@ ul p {
   margin-bottom: 30px; }
   .answers label {
     display: block;
-    font: 400 1.5em/1.75em "Libre Baskerville",Georgia,serif;
+    font: 400 1.5em/1.75em "Libre Baskerville", Georgia, serif;
     margin-bottom: 10px;
     padding-bottom: 7px 5px;
     padding-left: 25px; }
@@ -558,15 +563,12 @@ ul p {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 label[for^="videoChoice"] {
   -webkit-flex: 0 1 30%;
   -ms-flex: 0 1 30%;
   flex: 0 1 30%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 9, 27, 0.8)), to(rgba(27, 9, 27, 0.5)));
-  background: -webkit-linear-gradient(top, rgba(27, 9, 27, 0.8), rgba(27, 9, 27, 0.5));
   background: linear-gradient(to bottom, rgba(27, 9, 27, 0.8), rgba(27, 9, 27, 0.5));
   border: 2px white outset;
   border-radius: 4px;
@@ -577,7 +579,6 @@ label[for^="videoChoice"] {
     border-radius: 2px;
     width: 100%;
     opacity: .5;
-    -webkit-transition: .2s opacity;
     transition: .2s opacity; }
   label[for^="videoChoice"] small {
     display: block;
@@ -609,6 +610,7 @@ label[for^="videoChoice"] {
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 6vw; } }
+
 @media screen and (max-width: 800px) {
   .mainFooter .textContainer {
     -webkit-flex-wrap: wrap;
@@ -622,15 +624,14 @@ label[for^="videoChoice"] {
     text-align: right; }
   .mainFooter .footerNav {
     padding-top: 10px; } }
+
 @media screen and (max-width: 765px) {
   .pnpExample {
     display: none; }
-
   .kickstarterCorner {
     width: 75px; }
     .kickstarterCorner svg {
       height: 75px; }
-
   .someQuotes {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -640,6 +641,7 @@ label[for^="videoChoice"] {
       -ms-flex: 0 100%;
       flex: 0 100%;
       padding: 0; } }
+
 @media screen and (max-width: 686px) {
   .getUpdates .mainText, .getUpdates .characterImage {
     -webkit-flex: 1;
@@ -648,12 +650,10 @@ label[for^="videoChoice"] {
   .getUpdates .colorWrap {
     height: 80%;
     top: 10%; }
-
   .backNow aside, .backNow .mainImage, .backNow .colorWrap {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-
   .theCrew {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -666,7 +666,6 @@ label[for^="videoChoice"] {
       text-align: center;
       padding-right: 0;
       padding-bottom: 30px; }
-
   label[for^="videoChoice"] {
     -webkit-flex: 0 1 45%;
     -ms-flex: 0 1 45%;
@@ -680,6 +679,7 @@ label[for^="videoChoice"] {
       margin-right: 0; }
     label[for^="videoChoice"]:nth-child(odd) {
       margin-left: 0; } }
+
 @media screen and (max-width: 580px) {
   .getUpdates {
     -webkit-flex-wrap: wrap;
@@ -707,13 +707,13 @@ label[for^="videoChoice"] {
       top: 0;
       bottom: 0;
       margin: 100px 0 0; }
-
   .mainFooter .copyright, .mainFooter .footerNav {
     padding-top: 0; }
   .mainFooter .footerNav a {
     display: block;
     margin: 0;
     padding: 10px 0 0; } }
+
 @media screen and (max-width: 565px) {
   .introText {
     -webkit-flex-wrap: wrap;
@@ -727,12 +727,10 @@ label[for^="videoChoice"] {
       text-align: center;
       padding-right: 0;
       padding-bottom: 30px; }
-
   .printPlay .mainText {
     -webkit-flex: 1 100%;
     -ms-flex: 1 100%;
     flex: 1 100%; }
-
   .backNow {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -752,7 +750,6 @@ label[for^="videoChoice"] {
       top: 0;
       bottom: 0;
       margin: 30px 0 0; }
-
   .theCrew .mainText {
     text-align: center; }
     .theCrew .mainText .crewProfile {
@@ -767,9 +764,9 @@ label[for^="videoChoice"] {
     .theCrew .mainText img {
       margin: 0 auto;
       width: 200px; }
-
   .sebastianWelcome {
     display: none; } }
+
 @media screen and (max-width: 510px) {
   label[for^="videoChoice"] {
     -webkit-flex: 0 1 100%;
@@ -780,12 +777,11 @@ label[for^="videoChoice"] {
       margin-right: 0; }
     label[for^="videoChoice"]:nth-child(4) {
       margin-left: 0; } }
+
 @media screen and (max-width: 400px) {
   .kickstarterCorner {
     width: 50px; }
     .kickstarterCorner svg {
       height: 50px; }
-
   h1 {
     font-size: 4em; } }
-
